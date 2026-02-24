@@ -99,10 +99,16 @@ nav a:hover {
 }
 
 .products-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* .products-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-}
+} */
 
 .product-card {
   display: flex;
@@ -189,4 +195,108 @@ footer {
 
 .product-benefits li {
   margin-bottom: 8px;
+}
+/* ДОВІРА */
+.benefits {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.benefits h2 {
+  text-align: center;
+}
+
+.benefits-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.benefit-item {
+  flex: 1;
+  text-align: center;
+}
+
+.product-card .btn {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.order-btn {
+  background: #b37563;
+}
+
+.order-btn:hover {
+  background: #9e5f4f;
+}
+.product-card-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+/* ===================== */
+/* MOBILE VERSION */
+/* ===================== */
+
+@media (max-width: 768px) {
+  /* Header */
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  /* Products */
+  .products-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 220px;
+  }
+
+  /* Product page */
+  .product-page-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Benefits */
+  .benefits-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* Buttons */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
